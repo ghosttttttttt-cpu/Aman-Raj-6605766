@@ -1,2 +1,62 @@
-Student Performance Analysis SystemThis project is a Python-based utility designed to simulate academic performance data for a cohort of students. It generates scores across multiple subjects, calculates a Semester Performance Index (SPI), and produces visual insights into class-wide performance.📊 OverviewThe script automates the creation of a "Gradebook" for 60 students in an MBA Business Management program. It handles:Data Simulation: Uses NumPy to generate realistic, randomized scores for five core subjects.Grade Calculation: Logic to assign letter grades and SPI based on percentage thresholds.Data Export: Saves the final processed dataset to student_performance_data.csv.Visualization: Generates three key charts to analyze trends and distributions.🛠️ RequirementsTo run this script, you will need Python 3.x installed along with the following libraries:Bashpip install numpy pandas matplotlib seaborn
-📂 File Structurestudent_analysis.py: The main Python script.student_performance_data.csv: The generated dataset (created after running).average_subject_scores.png: Horizontal bar chart of subject averages.spi_distribution.png: Histogram showing the density of student SPIs.grade_distribution_marketing.png: Pie chart of grades for the Digital Marketing module.📈 Grading LogicThe script follows a standard academic grading scale:Percentage RangeLetter GradeSPI Points$\ge 90\%$A+10.0$80\% - 89\%$A9.0$70\% - 79\%$B+8.0$60\% - 69\%$B7.0$50\% - 59\%$C6.0$< 50\%$F0.0🚀 How It WorksInitialization: Sets a seed (42) for reproducibility so the "random" data remains consistent across runs.Score Generation: Subjects like Financial Accounting and Microeconomics are assigned random scores with a dynamic "low bound" to simulate varying difficulty levels between exams.Grand Total: Aggregates scores from all 5 subjects plus a Continuous Training (CT) score (max 30).Visualizations:Bar Chart: Compares the difficulty of subjects by looking at the mean score.Histogram: Displays the "skewness" of the class performance.Pie Chart: Specifically breaks down the grade success rate for the Digital Marketing course.
+# 📊 Student Performance Analyzer
+
+A **Python-based Student Grading and Analytics System** that simulates student data, evaluates academic performance, and generates insightful reports using data science libraries.
+
+---
+
+## 🚀 Project Overview
+
+This project is a **performance analyzer** built using **NumPy, Pandas, and Matplotlib**.  
+It generates realistic academic data for students, calculates grades, and produces both **individual student report cards** and a **faculty-level performance analysis**.
+
+The goal of this project is to demonstrate:
+- Data generation
+- Data processing and analysis
+- Grade calculation logic
+- Performance visualization
+
+---
+
+## 🧠 How It Works
+
+1. **Fake Data Generation**
+   - Creates academic records for **50 students**
+   - Uses `numpy` and `random` for realistic score distribution
+
+2. **Grade Calculation**
+   - Uses `pandas` to process marks
+   - Assigns grades based on calculated performance
+
+3. **Reports Generated**
+   - 📄 Individual Student Report Card
+   - 📈 Faculty-Level Performance Summary
+
+4. **Visualization**
+   - Graphs and charts generated using `matplotlib`
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **NumPy** – Numerical operations & data simulation  
+- **Pandas** – Data manipulation & grading logic  
+- **Matplotlib** – Performance visualization  
+
+---
+
+## ✨ Features
+
+- Automated student data generation  
+- Grade calculation and classification  
+- Individual performance reports  
+- Faculty-wide analytics  
+- Clean and easy-to-understand visualizations  
+
+---
+
+## ▶️ How to Run
+
+```bash
+pip install numpy pandas matplotlib
+python main.py
